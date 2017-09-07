@@ -1,0 +1,40 @@
+{
+  "name": "versos",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Una extensión de Chrome para leer poesía en tus nuevas pestañas",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack --progress --colors --watch",
+    "build": "webpack -p --progress --colors"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Angelmmiguel/versos.git"
+  },
+  "keywords": [
+    "chrome",
+    "extension",
+    "poetry",
+    "poems",
+    "poem",
+    "daily"
+  ],
+  "author": "Angel M Miguel <angel@laux.es>",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/Angelmmiguel/versos/issues"
+  },
+  "homepage": "https://github.com/Angelmmiguel/versos#readme",
+  "dependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-preset-env": "^1.6.0",
+    "copy-webpack-plugin": "^4.0.1",
+    "css-loader": "^0.28.7",
+    "extract-text-webpack-plugin": "^3.0.0",
+    "node-sass": "^4.5.3",
+    "sass-loader": "^6.0.6",
+    "webpack": "^3.5.6"
+  }
+}

@@ -1,0 +1,52 @@
+@import 'vars';
+
+// Resets
+body {
+  margin: 0;
+  background-color: $background;
+  font-size: 18px;
+  line-height: 1.500;
+  font-family: $font-body;
+}
+
+// Components
+main {
+  min-height: 96vh;
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 2vh 0;
+  text-align: center;
+}
+
+// Headers
+h1 {
+  font-family: $font-header;
+}
+
+// Poem
+.🖋 {
+  &__👂 {
+    margin: 0 0 .2em;
+    color: #b539b5;
+  }
+
+  &__✍️ {
+    font-size: .75em;
+    font-style: italic;
+    color: #e261bf;
+  }
+
+  &__⛩ {
+    width: 10%;
+    margin: 1.5em auto;
+    border-bottom: 1px solid #e4e4e4;
+  }
+
+  &__📄 {
+    white-space: pre;
+    color: #58482d;
+  }
+
+}
