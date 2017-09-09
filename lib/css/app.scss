@@ -76,8 +76,8 @@ h1 {
 }
 
 // Poem
-.🖋 {
-  &__👂 {
+.poem {
+  &__title {
     font-size: 1em;
     color: #ff6e6e;
     //color: #b539b5;
@@ -85,23 +85,22 @@ h1 {
     text-transform: uppercase;
   }
 
-  &__✍️ {
+  &__author {
     font-size: .7em;
     font-style: italic;
     color: #ef77b7;
     //color: #e261bf;
   }
 
-  &__⛩ {
+  &__separator {
     width: 10%;
     margin: 2em auto;
     border-bottom: 1px solid #e4e4e4;
   }
 
-  &__📄 {
+  &__body {
     font-size: 1.2em;
     white-space: pre;
     color: #58482d;
   }
-
 }
