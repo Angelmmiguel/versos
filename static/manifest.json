@@ -1,11 +1,18 @@
 {
   "name": "Versos",
-  "description": "Una extensión de Chrome para leer poesía en tus nuevas pestañas",
+  "description": "Un poema al día en tu navegador. Tu ración diaria de cultura",
   "version": "1.0",
   "incognito": "split",
   "chrome_url_overrides": { "newtab": "poema.html" },
   "manifest_version": 2,
   "permissions": [
     "storage"
-  ]
+  ],
+  "icons": {
+    "16": "icons/Logo16.png",
+    "48": "icons/Logo48.png",
+    "128": "icons/Logo128.png",
+    "256": "icons/Logo256.png",
+    "512": "icons/Logo512.png"
+  }
 }

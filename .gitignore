@@ -56,4 +56,10 @@ typings/
 
 # dotenv environment variables file
 .env
+# Mac things
+.DS_Store
 
+# Compiled
+dist/*
+!dist/.keep
+*.zip

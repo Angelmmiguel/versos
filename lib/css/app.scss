@@ -3,7 +3,6 @@
 // Resets
 body {
   margin: 0;
-  background-color: $background;
   font-size: 16px;
   line-height: 1.500;
   font-family: $font-body;
@@ -12,6 +11,11 @@ body {
 
 * {
   box-sizing: border-box;
+}
+
+a {
+  cursor: pointer;
+  text-decoration: none;
 }
 
 // Components
@@ -23,6 +27,63 @@ main {
   justify-content: center;
   padding: 15vh 0;
   text-align: center;
+  background-image: url('images/landing-600px.jpg');
+  background-size: cover;
+  position: relative;
+
+  $photo-sizes: 900px 1200px 1800px 2500px 3400px;
+  $sizes: 600px 900px 1200px 1800px 2500px;
+  @each $size in $sizes {
+    $i: index($sizes, $size);
+    @media (min-width: #{$size}) {
+      background-image: url('images/landing-#{nth($photo-sizes, $i)}.jpg');
+    }
+  }
+
+  .backdrop {
+    position: absolute;
+    background-color: black;
+    width: 100%;
+    height: 100%;
+    opacity: .92;
+    z-index: 0;
+  }
+}
+
+// Headers
+h1 {
+  font-family: $font-header;
+}
+
+// Poem
+.poem {
+  z-index: 1;
+
+  &__title {
+    font-size: 1em;
+    color: $red;
+    margin: 0 0 .2em;
+    text-transform: uppercase;
+  }
+
+  &__author {
+    font-size: .7em;
+    font-style: italic;
+    color: $red-light;
+  }
+
+  &__separator {
+    opacity: .3;
+    width: 5%;
+    margin: 2em auto;
+    border-bottom: 1px solid $separator;
+  }
+
+  &__body {
+    font-size: 1.2em;
+    white-space: pre;
+    color:$gray;
+  }
 }
 
 footer {
@@ -33,7 +94,7 @@ footer {
   height: 45px;
   line-height: 45px;
   font-size: .8em;
-  color: #b3a89a;
+  color: white;
   padding: 0 1em;
   display: flex;
   justify-content: space-between;
@@ -45,62 +106,26 @@ footer {
     margin: 0;
 
     a {
-      text-decoration: none;
-      color: #ff6e6e;
+      color: $red;
     }
 
-    &.🐧 {
+    &.share {
 
       a {
         display: inline-block;
-        margin: 0 .25em;
+        margin: 0 .4em;
       }
 
       svg {
         display: inline-block;
         width: 1em;
         vertical-align: middle;
-        fill: #ff6e6e;
+        fill: $red;
       }
     }
   }
 
   &:hover {
     opacity: 1;
-  }
-}
-
-// Headers
-h1 {
-  font-family: $font-header;
-}
-
-// Poem
-.poem {
-  &__title {
-    font-size: 1em;
-    color: #ff6e6e;
-    //color: #b539b5;
-    margin: 0 0 .2em;
-    text-transform: uppercase;
-  }
-
-  &__author {
-    font-size: .7em;
-    font-style: italic;
-    color: #ef77b7;
-    //color: #e261bf;
-  }
-
-  &__separator {
-    width: 10%;
-    margin: 2em auto;
-    border-bottom: 1px solid #e4e4e4;
-  }
-
-  &__body {
-    font-size: 1.2em;
-    white-space: pre;
-    color: #58482d;
   }
 }
