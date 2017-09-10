@@ -143,6 +143,24 @@ a {
       }
     }
 
+    .share {
+      color: white;
+      margin-top: 1.5em;
+
+      svg {
+        display: inline-block;
+        margin: 0 .2em;
+        width: 1em;
+        vertical-align: middle;
+        fill: white;
+        transition: fill .3s ease-out;
+
+        &:hover {
+          fill: $red;
+        }
+      }
+    }
+
     footer {
       z-index: 20;
       color: white;
