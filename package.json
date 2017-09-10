@@ -8,7 +8,8 @@
     "start": "webpack --progress --colors --watch",
     "build": "webpack -p --progress --colors",
     "extension": "yarn run build && cd dist && zip -r ../extension.zip ./*",
-    "cli": "./bin/index.js"
+    "cli": "./bin/index.js",
+    "build-site": "harp compile site"
   },
   "repository": {
     "type": "git",
@@ -37,6 +38,7 @@
     "css-loader": "^0.28.7",
     "extract-text-webpack-plugin": "^3.0.0",
     "front-matter": "^2.2.0",
+    "harp": "^0.24.0",
     "inquirer": "^3.2.3",
     "node-sass": "^4.5.3",
     "sass-loader": "^6.0.6",

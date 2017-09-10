@@ -60,6 +60,7 @@ typings/
 .DS_Store
 
 # Compiled
+site/www
 dist/*
 !dist/.keep
 *.zip
