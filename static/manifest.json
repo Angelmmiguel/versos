@@ -1,7 +1,7 @@
 {
   "name": "Versos",
   "description": "Un poema al día en tu navegador. Tu ración diaria de cultura",
-  "version": "1.0",
+  "version": "1.1",
   "incognito": "split",
   "chrome_url_overrides": { "newtab": "poema.html" },
   "manifest_version": 2,
