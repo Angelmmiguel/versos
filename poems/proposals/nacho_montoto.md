@@ -1,0 +1,26 @@
+---
+title: Diario del Frío, http://pajaritadepapel.blogspot.com.es/2013/04/
+author: José Ignacio Montoto (JIM)
+---
+
+XII
+
+Somos carne, una tierna y débil masa 
+de materia y desobediencia.
+
+Un dragón de mercurio 
+sobre una luna de agua.
+
+Por ello reventamos
+las carnosas encías de las flores
+que anunciaban estambres cuarteados
+en paisajes de hielo.
+
+Entonces definimos nuestro hogar:
+breve extensión de lumbre,
+de roja arquitectura.
+
+Jerarquía de barro, de tendones, 
+vegetales minúsculos, 
+tallos cartilaginosos 
+que sostienen el peso del planeta.
